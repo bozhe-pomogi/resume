@@ -1,0 +1,188 @@
+/* ***************************************************
+   NOTICE: This website uses the Ubuntu Mono font.
+   License: Ubuntu Font License (UFL) Version 1.0
+   *************************************************** */
+
+@font-face {
+    font-family: 'UbuntuMono-tt';
+    src: url('../Ubuntu_Mono/UbuntuMono-Regular.ttf')  format('truetype');
+}
+
+* {
+    font-family: 'UbuntuMono-tt', monospace;
+    font-size: 16px;
+    color: #bcbcbc;
+    background-color: #1c1c1c;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+    margin-bottom: 8px;
+}
+
+p {
+    margin-bottom: 8px;
+}
+
+code {
+    background-color: #3f3f3f;
+    color: #f0dfaf;
+    padding: 2px 4px;
+    border-radius: 3px;
+}
+
+
+hr::before {
+    display: block;
+    height: 2em;
+    content: "----";
+    color: #f0f
+}
+
+strong::before,
+strong::after,
+b::before,
+b::after {
+    content: "**"
+}
+
+em::before,
+em::after,
+i::before,
+i::after {
+    content: "_"
+}
+
+
+blockquote::after,
+blockquote::before {
+    content: ">>"
+}
+
+blockquote,
+pre,
+code {
+    background: #fafafa;
+    color: #000
+}
+
+pre {
+    overflow: auto
+}
+
+pre::before,
+pre::after {
+    content: "```";
+    display: block
+}
+
+code::before,
+code::after {
+    content: "`";
+    background: #fff
+}
+
+pre code::before,
+pre code::after {
+    content: ""
+}
+
+ol li {
+    margin-left: 20px;
+}
+
+ul li {
+    margin-left: 20px;
+}
+
+ol li {
+    list-style: decimal outside
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #af87af;
+    margin-top: 30px
+}
+
+h1 code,
+h2 code,
+h3 code,
+h4 code,
+h5 code,
+h6 code {
+    background: #fff
+}
+
+h1::before {
+    content: "# ";
+    color: rgb(0, 150, 170)
+}
+
+h2::before {
+    content: "## ";
+    color: rgb(0, 150, 170)
+}
+
+h3::before {
+    content: "### ";
+    color: rgb(0, 150, 170)
+}
+
+h4::before {
+    content: "#### ";
+    color: rgb(0, 150, 170)
+}
+
+
+ul li::before {
+    content: "* ";
+    color: rgb(255, 220, 0);
+    float: left;
+    margin-left: -1.5em;
+}
+
+body {
+    width: 100ch;
+    margin: 1em auto
+}
+
+a {
+    text-decoration: none
+}
+
+a:hover::before,
+a:hover::after {
+    text-decoration: underline
+}
+
+a::before {
+    content: "["
+}
+
+a::after {
+    content: "]"
+}
+
+@media print {
+    body {
+        width: auto;
+        font-size: 10pt
+    }
+
+    .switch-lang {
+        display: none;
+    }
+}
